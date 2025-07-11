@@ -1,0 +1,17 @@
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90%;
+    color: black;
+}
+p::first-letter{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 215%;
+    color: red;
+}
+a::after{
+    content:&rarr;
+}
+input::placeholder{
+    color: grey;
+    font-style: italic;
+}

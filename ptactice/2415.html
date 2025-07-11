@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2415</title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                background-color: greenyellow;
+            }
+            .login-form{ 
+                width: 300px;
+                margin: auto;
+                background-color: white;
+                box-shadow:  0 0 5px rgba(0,0,0,0.5);;
+                padding: 30px;
+            }
+            .login-form div{ 
+                margin-top: 15px;}
+            .login-form:first-child{
+                margin: 0;
+            }
+            .login input, .login button { 
+                 padding: 10px; /* Поля вокруг */
+                box-sizing: border-box; /* Ширина не учитывает padding */
+                 width: 100%; /* Ширина */
+                border: 1px solid #666; /* Параметры рамки */
+               }
+              .login button {
+              background: #efefef; /* Цвет фона */
+                }
+        </style>
+    </head>
+    <body>
+         <form class="login-form">
+             <div><input type="text" id="login" name="login" placeholder="Логин"></div>
+             <div></div><input type="password" id="password" name="password" placeholder="Пароль"></div>
+             <div></div><input type="submit" value="Войти"></div>
+         </form>
+        
+</html>

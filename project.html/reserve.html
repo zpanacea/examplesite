@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PrimalTraining</title>
+  <style>
+   /* Общие стили */
+body {
+  margin: 0;
+  padding-top: 100px; /* подстраховка: высота шапки */
+}
+
+header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(219, 228, 243);
+  padding: 0 10px;
+  margin: 0;
+  border-bottom: 2px solid black;
+  position: fixed;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-family: "Mulish", sans-serif;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: grey;
+  transition: color 0.3s ease;
+}
+
+div.reserve {
+  background-color: rgb(106, 106, 233);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+div.menu {
+  padding: 15px;
+}
+
+div.reserve:hover {
+  background-color: rgb(21, 21, 21);
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.logo {
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -3px;
+}
+
+h1 {
+  margin: 15px 0 0 0;
+  font-family: "Kanit", sans-serif;
+  font-size: 80px;
+  font-weight: 1000;
+  color: black;
+  letter-spacing: -5px;
+  border-bottom: 1px solid black;
+  padding: 20px 30px 40px 20px;
+}
+span{
+    color: rgb(106, 106, 233);;
+}
+.container2{
+    width: 100%;
+    display: flex;
+    background-color: rgb(219, 228, 243);
+  
+
+}
+.text1{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 20px;
+  
+    
+}
+h3 {
+  font-family: "Kanit", sans-serif;
+  font-size: 40px;
+  letter-spacing: -3px;
+  margin-top: 10px;
+  margin-left: 10px;}
+.text1 ul{
+  margin: 0;
+  padding: 10px;
+  flex-grow: 1;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+}
+  ul li{
+    display: flex;
+    font-family: "Kanit", sans-serif;
+    list-style: none;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+    padding-top: 5px;
+   
+    margin:0 15px 0 0;
+    
+
+}
+ul li:last-child{
+    border-bottom: none;
+}
+.bottom-block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  margin-top: 70px;
+  
+}
+.button-reserve{
+  text-decoration: none;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+  text-transform: uppercase;
+  padding: 10px 80px 10px 80px;
+  background-color:rgb(106, 106, 233);
+  color: black;
+  border-radius: 10px;
+  
+}
+.container3{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ background-color: rgb(106, 106, 233); ;
+}
+.phrase h4{
+  font-family: "Kanit", sans-serif;
+  font-size: 35px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  padding-bottom: 20px;
+  padding-top: -20px;
+}
+.phrase p{
+  font-family: "Kanit", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  margin-top: -20px;
+
+}
+.button-reserve-spot{
+  background-color: white;
+ text-decoration: none;
+  color:black;
+  padding:10px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: "Mulish", sans-serif;
+  margin-top: 30px;
+}
+.button-reserve-spot:hover{
+  background-color: black;
+  color: white;
+}
+.prefooter{
+  width: 100%;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: rgb(219, 228, 243);
+  font-size: 40;
+  
+}
+img#logo{
+  background-color: black;
+  width: 200px;
+  height: 140px;
+}
+.prefooter p{
+  font-family:"Lato", sans-serif; 
+  font-size: 30px;
+  font-weight: 800;
+ letter-spacing: -3px;
+ padding-top: -20;
+}
+
+
+footer{
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  background-color: rgb(219, 228, 243);
+  gap: 40px;
+
+}
+footer h6{
+  
+   font-family: "Kanit", sans-serif;
+   font-size: 15px;
+   font-weight: 700;
+   margin: 0;
+   padding: 0;
+  
+ 
+}
+footer p{
+  font-family: "Kanit", sans-serif;
+   font-size: 10px;
+   font-weight: 600;
+  line-height: 15px;
+  margin: 0;
+  padding: 0;
+}
+footer .social a{
+   font-family: "Kanit", sans-serif;
+   font-size: 10px;
+   font-weight: 600;
+   line-height: 15px;
+   text-decoration: none;
+   color: black;
+}
+footer .social a:hover{
+  color: grey;
+  transition: color 0.3s ease;
+}
+.hours table{
+   font-family: "Kanit", sans-serif;
+   font-size: 10px;
+   font-weight: 600;
+   line-height: 15px;
+   border-collapse: collapse;
+}
+.hours td{
+  padding: 0 5px 2px 0;
+  text-align: left;
+}
+.ch{
+  color: black;
+}
+.ch:hover{
+  color: grey;
+  transition: color 0.3s ease;
+}
+</style>
+<body>
+  <header>
+    <div class="container">
+      <h3 class="logo">PrimalTraining</h3>
+      <nav>
+        <div class="menu"><a href="home.html">HOME</a></div>
+        <div class="menu"><a href="about.html">ABOUT</a></div>
+        <div class="reserve"><a href="reserve.html">RESERVE YOUR SPOT</a></div>
+      </nav>
+    </div>
+  </header>
+ <h1>BOOK A <span>SESSION</span></h1>
+ <div class="container2">
+    <section class="text1">
+        <h3>STRENGHT</h3>
+        <ul>
+            <li>Weekdays at 6AM</li>
+            <li>Weekends and Holidays at 8AM</li>
+            <li>Build a foundation of raw power with our comprehensive<br>
+                 weightlifting and strength training programs. </li>
+        </ul>
+        <div class="bottom-block">
+          <a class="button-reserve" href="reserve.html">RESERVE YOUR SPOT</a>
+        </div>
+    </section>
+    <section class="text1">
+        <h3>CONDITIONING</h3>
+        <ul>
+            <li>Weekdays at 8AM</li>
+            <li>Weekends and Holidays at 10AM</li>
+            <li>Push your limits with high-intensity workouts that challenge<br>
+               your cardiovascular endurance and build functional fitness. </li>
+        </ul>
+        <div class="bottom-block">
+          <a class="button-reserve" href="reserve.html">RESERVE YOUR SPOT</a>
+        </div>
+    </section>
+    <section class="text1">
+        <h3>COMMUNITY CLASSES</h3>
+        <ul>
+            <li>Every day on the hour</li>
+            <li>WExperience the power of collective effort with our custom<br>
+               Workout of the Day. Push your limits alongside like-minded<br>
+                individuals.</li>
+        </ul>
+        <div class="bottom-block">
+          <a class="button-reserve" href="reserve.html">RESERVE YOUR SPOT</a>
+         </div>
+    </section>
+ </div>
+ <div class="container3">
+    <div class="phrase"><h4>PRIMAL PERSONAL TRAINING</h4></div>
+       <div class="phrase"><p>Receive personalized guidance and tailored programs designed to unlock your individual primal<br>
+         potential. Our expert coaches will guide you every step of the way.<p></div>
+       <a class="button-reserve-spot" href="reserve.html">RESERVE YOUR SPOT</a>
+    </div>
+  <div class="prefooter">
+   <img id="logo" src="images/noback.jpg" alt="logo">
+    <p>PrimalTraining</p>
+  </div>
+  <footer>
+    <div class="contact">
+      <h6>CONTACT</h6>
+      <p>Email:<span class="ch"> hello@figma.com</span> <br>
+        Phone:<span class="ch">(203) 555-5555</span></p>
+    </div>
+    <div class="hours">
+     <h6>OPENING HOURS</h6>
+      <table>
+       <tr><td>MON – FRI</td><td>5:00 – 23:00</td></tr>
+       <tr><td>SATURDAYS</td><td>8:00 – 16:00</td></tr>
+       <tr><td>SUNDAYS</td><td>8:00 – 13:00</td></tr>
+       <tr><td>HOLIDAYS</td><td>8:00 – 16:00</td></tr>
+     </table>
+   </div>
+
+    <div class="social">
+      <h6>SOCIAL</h6>
+      <a href="https://www.instagram.com/figma/">Instagram</a><br>
+      <a href="https://x.com/figma">X</a><br>
+      <a href="https://www.linkedin.com/">linkedIn</a><br>
+      <a href="https://open.spotify.com/">Spotify</a>
+    </div>
+  </footer>
+</body>
+</html>

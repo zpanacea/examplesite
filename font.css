@@ -1,0 +1,22 @@
+h2{
+    font-family:'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.4;
+
+}
+p{
+    font-family: 'Open', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.5em;
+    text-align: justify;
+}
+a{
+    color: #0077cc;
+    text-decoration: none;
+    
+
+}
+a:hover{
+    text-decoration: underline;
+}

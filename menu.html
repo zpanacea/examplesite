@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu</title>
+        <meta charset="utf-8">
+        <style>
+           .menu {
+    margin: 0; padding: 0;
+    list-style: none;
+    display: flex;
+    background-color: #d63138;
+   }
+   .menu__item > a,
+   .menu__item > span,
+   .menu-dropdown__item > a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+   }
+   .menu__item > a:hover,
+   .menu__item > span:hover,
+   .menu-dropdown__item > a:hover {
+    background-color: #9d181f;
+   }
+   .item__dropdown::before {
+    content: '► ';
+    font-size: 0.8rem;
+   }
+   .menu__item-dropdown:hover .item__dropdown::before {
+    content: '▼ ';
+   }
+   .item__dropdown {
+    cursor: pointer;
+   }
+   .menu__item-dropdown {
+    position: relative;
+   }
+   .menu-dropdown {
+    display: none;
+    margin: 0; padding: 0;
+    width: 200px;
+    list-style: none;
+    position: absolute;
+    left: 0; top: 100%;
+    background-color: #d63138;
+   }
+   .menu-dropdown__item > a {
+    padding: 0.5rem;
+   }
+   .menu__item-dropdown:hover > .menu-dropdown {
+    display: block;
+   }
+        </style>
+    </head>
+    <body>
+        <nav aria-label="Меню">
+        <ul class="menu">
+           <li><a class="menu_item" href="#">Консоме</a></li>
+           <li><a class="menu_item" href="#">Гарниры</a></li>
+           <li class="menu__item menu__item-dropdown"><span class="item-dropdown">Соусы</span></li>
+             <ul class="menu-dropdown">
+                 <li class="menu-dropdown_item"><a href="#">Базовые соусы</a></li>
+                 <li class="menu-dropdown_item"><a href="#">Горячие соусы</a></li>
+                 <li class="menu-dropdown_item"><a href="#">Холодные соусы</a></li>
+            </ul>  
+            <li class="menu__item menu__item-dropdown"><span class="item-dropdown">Жаркое</span></li>
+             <ul class="menu-dropdown">
+                 <li class="menu-dropdown_item"><a href="#">Жаркое из говядины</a></li>
+                 <li class="menu-dropdown_item"><a href="#">Жаркое из телятины</a></li>
+                 <li class="menu-dropdown_item"><a href="#">Жаркое из свинины</a></li>
+                 <li class="menu-dropdown_item"><a href="#">Жаркое из птицы</a></li>
+            </ul>           
+        </ul>
+    </body>
+</html>

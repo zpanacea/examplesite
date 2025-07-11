@@ -1,0 +1,293 @@
+           body{
+                margin: 0;
+                padding-top: 100px;/* подстраховка: высота шапки,чтобы контент снизу не спряталсь под шапку */
+                
+            }
+            header{
+                width: 100%;
+                top: 0;
+                left: 0;
+                background-color: rgb(219, 228, 243);
+                padding: 0 10px;
+                margin: 0 ;
+                border-bottom: 2px solid black;
+                position: fixed;
+                z-index: 1000;
+            }
+            .container{
+                display: flex;
+                align-items: center;
+                justify-content: space-between; /* лого влево, кнопки вправо */
+                padding: 10px 20px;
+            }
+            nav{
+                display: flex;
+                gap: 30px;
+    
+            }
+            nav a{
+                text-decoration: none;
+                color: black;
+                 font-family: "Mulish", sans-serif;
+                 font-size: 15px;
+    
+            }
+            nav a:hover{
+                color: grey;
+            }
+            div.reserve{
+                background-color: rgb(106, 106, 233);
+                padding:20px;
+                border-radius: 10px;
+            }
+             div.menu{
+                 padding: 15px;
+            }
+            div.reserve:hover{
+                background-color: rgb(21, 21, 21);
+                color:white;
+            }
+            .logo{
+                font-family: "Lato", sans-serif;
+                font-size:30px;
+                font-weight: 800;
+                letter-spacing: -3px;
+            }
+            h1{
+                margin: 15px 0 0 0;
+               font-family: "Kanit", sans-serif;
+                font-size: 80px;
+                font-weight: 1000;
+                color: black;
+                letter-spacing: -5px;
+                border-bottom: 2px solid black;
+                padding: 20px 30px 40px 20px; 
+
+            }
+            
+            span{
+                color: rgb(106, 106, 233);
+            }
+            .container2{
+                width: 100%;
+                display: flex;
+                margin: 0;
+                padding: 0;
+              background-color:rgb(219, 228, 243); ;
+            }
+           .image1{
+            width: 1200px;
+            box-sizing: border-box;
+           }
+          .image1 img {
+            width: 100%;
+            display: block;
+            height: auto;
+           }
+           .text1{
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            background-color:rgb(219, 228, 243); ;
+            color: black;
+             }
+           .bottom-block{
+            margin-top:auto;
+            margin-bottom: 60px;
+            display:flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+           }
+          h3{
+             font-family: "Kanit", sans-serif;
+             font-size: 40px;
+             
+             letter-spacing: -3px;
+             margin-top: 10px;
+            margin-left: 30px;}
+         p{
+            font-family: "Kanit", sans-serif;
+             font-size: 20px;
+             margin-left: 30px;
+             line-height: 30px;}
+        #button-about{
+            margin-left: 30px;
+            text-decoration: none;
+            color: black;
+            padding: 20px;
+        }
+        #button-about:hover{
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+           
+        }
+        .container3{
+         width: 100%;
+         display: flex;
+         background-color:rgb(219, 228, 243);
+        border-bottom:2px solid black;}
+        .image2 img{
+           width: 100%;
+         display: block;
+         height: auto;
+         box-sizing: border-box;
+        }
+        .text2, .text3, .image2{
+         width: 600px;
+         display: flex;
+         flex-direction: column;
+         box-sizing: border-box;}
+
+         
+         .text2 {
+          border-right: 2px solid black;
+          }
+
+         .text3 {
+           border-right: 2px solid black;
+         }
+         .text2 .bottom-block, .text3 .bottom-block {
+           margin-top: auto;
+           margin-bottom: 60px;
+           display: flex;
+           flex-direction: column;
+            align-items: flex-start;
+           gap: 10px;
+          }    
+         .text2 p{
+            padding-bottom: 30px;
+         }
+  
+        .container4 {
+  width: 100%;
+  display: flex; /* блоки в строку */
+  background-color: rgb(219, 228, 243);
+  border-bottom: 2px solid black;
+}
+
+.list_objects {
+  width: 600px; /* фиксируем ширину блока со списком */
+  display: flex;
+  flex-direction: column; /* элементы в столбик */
+  box-sizing: border-box;
+}
+
+.list_item {
+  flex: 1; /* равномерно делим высоту между всеми элементами */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* вертикальное выравнивание текста */
+  box-sizing: border-box;
+  border-bottom: 2px solid black; /* граница между элементами */
+  padding: 20px; /* внутренние отступы */
+}
+
+.list_item:last-child {
+  border-bottom: none; /* убираем границу у последнего */
+}
+
+.list_item h4 {
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+  letter-spacing: -1px;
+  margin: 0; /* убираем отступы */
+}
+
+.list_item p {
+  font-family: "Kanit", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.button-view {
+  text-decoration: none;
+  color: black;
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+  padding: 10px; /* отступы вокруг текста */
+}
+
+.button-view:hover {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.image3 {
+  width: 1200px; /* ширина картинки справа */
+  box-sizing: border-box;
+}
+
+.image3 img {
+  width: 100%; 
+  display: block;
+  height: auto;
+  box-sizing: border-box;
+}
+.container5{
+  width: 100%;
+  height: 300px;
+  margin: 0;
+  display: flex;
+  padding: 40px;
+  background-color: rgb(106, 106, 233);
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  
+}
+.reserve{
+  text-decoration: none;
+background-color: white;
+padding:20px;
+border-radius: 10px;
+color: black;
+margin: 0;
+}
+.reserve:hover{
+background-color: rgb(21, 21, 21);
+color:white;
+}
+.phrase h4{
+  font-family: "Kanit", sans-serif;
+  font-size: 35px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin: 0;
+
+}
+.phrase p{
+  font-family: "Kanit", sans-serif;
+  font-size: 15px;
+    padding-bottom: -10px;
+    margin: 0;
+}
+.prefooter{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(219, 228, 243);
+  font-size: 40;
+}
+img#logo{
+  background-color: black;
+  width: 200px;
+  height: 140px;
+}
+.prefooter p{
+  font-family:"Lato", sans-serif; 
+  font-size: 30px;
+  font-weight: 800;
+ letter-spacing: -3px;
+ padding-top: -20;
+}
+footer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: s;
+}

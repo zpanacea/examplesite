@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>TechConf 2025</title>
+  </head>
+  <body>
+    <header>
+      <h1>TechConf 2025<h1>
+      <nav>
+        <a href="#about">О событии</a>
+        <a href="#schedule">Программа</a>
+        <a href="#register">Регистрация</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>О конференции</h2>
+        <p>Конференция по веб-разработке пройдет 1 июня в Москве. Вас ждут доклады, мастер-классы и нетворкинг.</p>
+        <iframe width="560" height="315" src="https://youtube.com/embed/fake-video" frameborder="0" allowfullscreen></iframe>
+        <ul>
+          <li>HTML & CSS</li>
+          <li>JavaScript</li>
+          <li>Современные фреймворки</li>
+        </ul>
+      </section>
+
+      <section id="schedule">
+        <h2>Расписание</h2>
+        <table>
+          <tr>
+            <th>Время</th>
+            <th>Спикер</th>
+            <th>Тема</th>
+          </tr>
+          <tr>
+            <td>10:00</td>
+            <td>Иван Иванов</td>
+            <td>Будущее CSS</td>
+         </tr>
+          <tr>
+            <td>11:00</td>
+            <td>Мария Смирнова</td>
+            <td>JavaScript 2025</td>
+            </tr>
+        </table>
+      </section>
+
+      <section id="register">
+        <h2>Регистрация</h2>
+        <form action="submit.php" methods="POST">
+          <label for="name">Имя</label>
+          <input type="text" name="name" require>
+          <label for="email">Email</label>
+          <input type="email" name="email" required>
+
+          <label for="type">Тип участия</label>
+          <select name="type" id="type">
+            <option>Онлайн</option>
+            <option>Офлайн</option>
+          </select>
+
+          <input type="checkbox" name="rules" id="rules">
+          <label for="rules">Я согласен с условиями</label>
+
+          <button type="submit">Зарегистрироваться</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; TechConf 2025. Все права защищены.
+      <p>Свяжитесь с нами: <a href="mailto:info@techconf.com">info@techconf.com</a></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PrimalTraining</title>
+  <style>
+   /* Общие стили */
+body {
+  margin: 0;
+  padding-top: 100px; /* подстраховка: высота шапки */
+}
+
+header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(219, 228, 243);
+  padding: 0 10px;
+  margin: 0;
+  border-bottom: 2px solid black;
+  position: fixed;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-family: "Mulish", sans-serif;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: grey;
+  transition: color 0.3s ease;
+}
+
+div.reserve {
+  background-color: rgb(106, 106, 233);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+div.menu {
+  padding: 15px;
+}
+
+div.reserve:hover {
+  background-color: rgb(21, 21, 21);
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.logo {
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -3px;
+}
+
+h1 {
+  margin: 15px 0 0 0;
+  font-family: "Kanit", sans-serif;
+  font-size: 80px;
+  font-weight: 1000;
+  color: black;
+  letter-spacing: -5px;
+  border-bottom: 2px solid black;
+  padding: 20px 30px 40px 20px;
+}
+
+span {
+  color: rgb(106, 106, 233);
+}
+
+/* container2 */
+.container2 {
+  height: auto;
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(219, 228, 243);
+}
+
+.image1 {
+  width: 1200px;
+  box-sizing: border-box;
+}
+
+.image1 img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.text1 {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(219, 228, 243);
+  color: black;
+}
+
+.bottom-block {
+  margin-top: auto;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+h3 {
+  font-family: "Kanit", sans-serif;
+  font-size: 40px;
+  letter-spacing: -3px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+p {
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+  margin-left: 30px;
+  line-height: 30px;
+}
+
+#button-about {
+  margin-left: 30px;
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+}
+
+#button-about:hover {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  transition: color 0.3s ease;
+}
+
+/* container3 */
+.container3 {
+  width: 100%;
+  display: flex;
+  background-color: rgb(219, 228, 243);
+  border-bottom: 2px solid black;
+}
+
+.text2, .text3, .image2 {
+  width: 600px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.text2 {
+  border-right: 2px solid black;
+}
+
+.text3 {
+  border-right: 2px solid black;
+   
+}
+
+.text2 .bottom-block, .text3 .bottom-block {
+  margin-top: auto;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.image2 img {
+  width: 100%;
+  display: block;
+  height: auto;
+  box-sizing: border-box;
+}
+
+/* container4 */
+.container4 {
+  width: 100%;
+  display: flex;
+  background-color: rgb(219, 228, 243);
+  border-bottom: 2px solid black;
+}
+
+.list_objects {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.list_item {
+  flex: 1; /* чтобы все были одинаковой высоты */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  border-bottom: 2px solid black;
+  padding: 20px;
+}
+
+.list_item:last-child {
+  border-bottom: none;
+}
+
+h4 {
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.list_item p {
+  font-family: "Kanit", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.button-view {
+  text-decoration: none;
+  color: black;
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.button-view:hover {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.image3 {
+  width: 1200px;
+  box-sizing: border-box;
+}
+
+.image3 img {
+  width: 100%;
+  display: block;
+  height: auto;
+  box-sizing: border-box;
+}
+.container5{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ background-color: rgb(106, 106, 233); ;
+}
+.phrase h4{
+  font-family: "Kanit", sans-serif;
+  font-size: 35px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  padding-bottom: 20px;
+  padding-top: -20px;
+}
+.phrase p{
+  font-family: "Kanit", sans-serif;
+  font-size: 15px;
+
+}
+.reserve{
+  background-color: white;
+  text-decoration: none;
+  color:black;
+  padding:10px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: "Mulish", sans-serif;
+}
+.reserve:hover{
+  background-color: black;
+  color: white;
+}
+.prefooter{
+  width: 100%;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: rgb(219, 228, 243);
+  font-size: 40;
+  
+}
+img#logo{
+  background-color: black;
+  width: 200px;
+  height: 140px;
+}
+.prefooter p{
+  font-family:"Lato", sans-serif; 
+  font-size: 30px;
+  font-weight: 800;
+ letter-spacing: -3px;
+ padding-top: -20;
+}
+
+
+footer{
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  background-color: rgb(219, 228, 243);
+  gap: 40px;
+
+}
+footer h6{
+  
+   font-family: "Kanit", sans-serif;
+   font-size: 15px;
+   font-weight: 700;
+   margin: 0;
+   padding: 0;
+  
+ 
+}
+footer p{
+  font-family: "Kanit", sans-serif;
+   font-size: 10px;
+   font-weight: 600;
+  line-height: 15px;
+  margin: 0;
+  padding: 0;
+}
+footer .social a{
+   font-family: "Kanit", sans-serif;
+   font-size: 10px;
+   font-weight: 600;
+   line-height: 15px;
+   text-decoration: none;
+   color: black;
+}
+footer .social a:hover{
+  color: grey;
+  transition: color 0.3s ease;
+}
+.hours table{
+   font-family: "Kanit", sans-serif;
+   font-size: 10px;
+   font-weight: 600;
+   line-height: 15px;
+   border-collapse: collapse;
+}
+.hours td{
+  padding: 0 5px 2px 0;
+  text-align: left;
+}
+.ch{
+  color: black;
+}
+.ch:hover{
+  color: grey;
+  transition: color 0.3s ease;
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h3 class="logo">PrimalTraining</h3>
+      <nav>
+        <div class="menu"><a href="home.html">HOME</a></div>
+        <div class="menu"><a href="about.html">ABOUT</a></div>
+        <div class="reserve"><a href="reserve.html">RESERVE YOUR SPOT</a></div>
+      </nav>
+    </div>
+  </header>
+
+  <h1>TRAIN HARD. <span>LIVE BETTER</span></h1>
+
+  <div class="container2">
+    <div class="image1"><img src="images/image1.jpg" alt="sports"></div>
+    <section class="text1">
+      <h3>FOR THE COMMITTED</h3>
+      <div class="bottom-block">
+        <p><p>Train like an athlete with top-tier equipment<br> 
+                    and expert programming. Whether you're <br> 
+                    building muscle or breaking PRs, we help you <br> 
+                    push past limits.</p></p>
+        <a id="button-about" href="about.html">ABOUT US</a>
+      </div>
+    </section>
+  </div>
+
+  <div class="container3">
+    <section class="text2">
+      <h3>GUIDED BY EXPERTS</h3>
+      <div class="bottom-block">
+        <p>We believe in creating a positive environment<br>
+                       where you can thrive. We're here to help you<br>
+                       achieve your goals and unlock your full<br>
+                       potential.</p></p>
+      </div>
+    </section>
+    <section class="text3">
+      <h3>DYNAMIC OPEN GYM</h3>
+      <div class="bottom-block">
+        <p>Our facility is the optimal environment for<BR> 
+                     strength training and performance, fully<br>
+                     equipped with top-of-the-line tools, ample<br>
+                     training areas, and a focus on functional<br>
+                      movement.</p>
+      </div>
+    </section>
+    <div class="image2"><img src="images/image2.jpg" alt="gym"></div>
+  </div>
+
+  <h1>JOIN THE <span>COMMUNITY</span></h1>
+
+  <div class="container4">
+    <section class="list_objects">
+      <div class="list_item">
+        <h3>DISCOVER YOUR<br>POTENTIAL</h3>
+      </div>
+      <div class="list_item">
+        <h4>Expert Coaching</h4>
+        <p>Trainers who are passionate about your progress.</p>
+      </div>
+      <div class="list_item">
+        <h4>Results-Driven Programs</h4>
+        <p>Workouts that deliver tangible results.</p>
+      </div>
+      <div class="list_item">
+        <h4>A Supportive Tribe</h4>
+        <p>A community that pushes you to be your best.</p>
+      </div>
+      <div class="list_item">
+        <a class="button-view" href="reserve.html">VIEW CLASSES</a>
+      </div>
+    </section>
+    <div class="image3"><img src="images/image3.jpg" alt="community"></div>
+  </div>
+  <div class="container5">
+    <div class="phrase"><p>WHAT WE BELIEVE IN</p></div>
+       <div class="phrase"><h4>JOIN THE PRIMAL TRIBE TODAY!</h4></div>
+       <div><a class="reserve" href="reserve.html">RESERVE YOUR SPOT</a></div>
+    </div>
+  <div class="prefooter">
+   <img id="logo" src="images/noback.jpg" alt="logo">
+    <p>PrimalTraining</p>
+  </div>
+  <footer>
+    <div class="contact">
+      <h6>CONTACT</h6>
+      <p>Email:<span class="ch"> hello@figma.com</span> <br>
+        Phone:<span class="ch">(203) 555-5555</span></p>
+    </div>
+    <div class="hours">
+     <h6>OPENING HOURS</h6>
+      <table>
+       <tr><td>MON – FRI</td><td>5:00 – 23:00</td></tr>
+       <tr><td>SATURDAYS</td><td>8:00 – 16:00</td></tr>
+       <tr><td>SUNDAYS</td><td>8:00 – 13:00</td></tr>
+       <tr><td>HOLIDAYS</td><td>8:00 – 16:00</td></tr>
+     </table>
+   </div>
+
+    <div class="social">
+      <h6>SOCIAL</h6>
+      <a href="https://www.instagram.com/figma/">Instagram</a><br>
+      <a href="https://x.com/figma">X</a><br>
+      <a href="https://www.linkedin.com/">linkedIn</a><br>
+      <a href="https://open.spotify.com/">Spotify</a>
+    </div>
+  </footer>
+</body>
+</html>

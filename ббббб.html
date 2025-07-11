@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>List Item Borders Example</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: "Kanit", sans-serif;
+}
+
+.container4 {
+  display: flex;
+  border: 2px solid black;
+  height: 100vh; /* чтобы всё растянулось на всю высоту окна */
+}
+
+.list_objects {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.list_item {
+  border-bottom: 1px solid black;
+  padding: 20px;
+}
+
+.list_item:last-child {
+  border-bottom: none;
+}
+
+.image3 {
+  width: 400px;
+}
+
+.image3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h3, h4, p {
+  margin: 0 0 10px 0;
+}
+
+  </style>>
+</head>
+<body>
+  <div class="container4">
+    <section class="list_objects">
+      <div class="list">
+        <div class="list_item">
+          <h3>DISCOVER YOUR POTENTIAL</h3>
+        </div>
+        <div class="list_item">
+          <h4>Expert Coaching</h4>
+          <p>Trainers who are passionate about your progress.</p>
+        </div>
+        <div class="list_item">
+          <h4>Results-Driven Programs</h4>
+          <p>Workouts that deliver tangible, measurable results.</p>
+        </div>
+        <div class="list_item">
+          <h4>A Supportive Tribe</h4>
+          <p>A community that pushes you to be your best.</p>
+        </div>
+        <div class="list_item">
+          <a class="button-view" href="#">VIEW CLASSES</a>
+        </div>
+      </div>
+    </section>
+    <div class="image3">
+      <img src="https://via.placeholder.com/400x600" alt="image3">
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ровные блоки</title>
+<style>
+footer {
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px; /* равномерный отступ между колонками */
+  background-color: rgb(219, 228, 243);
+}
+
+/* Заголовок без лишнего паддинга */
+h6 {
+  font-family: "Kanit", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;           /* убираем возможные внешние отступы */
+  padding: 0;
+}
+
+/* Текст в колонках */
+.contact p,
+.hours p {
+  font-family: "Kanit", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 15px;
+  margin: 0;           /* убираем внешние отступы */
+  padding: 0;
+}
+</style>
+</head>
+<body>
+<footer>
+  <div class="contact">
+    <h6>CONTACT</h6>
+    <p>Email: hello@figma.com<br>
+       Phone: (203) 555-5555</p>
+  </div>
+  <div class="hours">
+    <h6>OPENING HOURS</h6>
+    <p>MON – FRI 5:00 – 23:00<br>
+       SATURDAYS 8:00 – 16:00<br>
+       SUNDAYS 8:00 – 13:00<br>
+       HOLIDAYS 8:00 – 16:00</p>
+  </div>
+</footer>
+</body>
+</html>

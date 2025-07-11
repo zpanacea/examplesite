@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PrimalTraining</title>
+  <style>
+   /* Общие стили */
+body {
+  margin: 0;
+  padding-top: 100px; /* подстраховка: высота шапки */
+}
+
+header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(219, 228, 243);
+  padding: 0 10px;
+  margin: 0;
+  border-bottom: 2px solid black;
+  position: fixed;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-family: "Mulish", sans-serif;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: grey;
+  transition: color 0.3s ease;
+}
+
+div.reserve {
+  background-color: rgb(106, 106, 233);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+div.menu {
+  padding: 15px;
+}
+
+div.reserve:hover {
+  background-color: rgb(21, 21, 21);
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.logo {
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -3px;
+}
+
+h1 {
+  margin: 15px 0 0 0;
+  font-family: "Kanit", sans-serif;
+  font-size: 80px;
+  font-weight: 1000;
+  color: black;
+  letter-spacing: -5px;
+  border-bottom: 2px solid black;
+  padding: 20px 30px 40px 20px;
+}
+/* container2 */
+.container2 {
+  height: 700px;
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.text1 {
+  height: 100%;
+ width: 1200px;
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  background-color:rgb(106, 106, 233);
+  color: black;
+}
+
+.text1 .bottom-block,.text2 .bottom-block {
+  margin-top: auto;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+h3 {
+  font-family: "Kanit", sans-serif;
+  font-size: 40px;
+  letter-spacing: -3px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+p {
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+  margin-left: 30px;
+  line-height: 30px;
+  margin-top: 0;
+}
+#our{
+    font-weight: 900;
+    letter-spacing: -2px;
+    margin-bottom:0 ;
+}
+.image1 {
+  width: 600px;
+  box-sizing: border-box;
+  display: flex;
+  flex: 1;
+}
+
+.image1 img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.container3 {
+  height: 700px;
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+box-sizing: border-box;
+}
+
+
+.text2 {
+  height: 100%;
+ width: 600px;
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  background-color:white;
+  color: black;
+ 
+}
+
+
+h3 {
+  font-family: "Kanit", sans-serif;
+  font-size: 40px;
+  letter-spacing: -3px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+p {
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+  margin-left: 30px;
+  line-height: 30px;
+  margin-top: 0;
+ margin-bottom: 0;
+ padding-bottom: 0;
+}
+
+.image2 {
+  width: 1200px;
+  box-sizing: border-box;
+  display: flex;
+  flex: 2;
+}
+
+.image2 img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+.container4{
+  display: flex;
+  position: relative;
+
+}
+.container4 img{
+  width: 100%;
+  height: auto;
+  display:block
+}
+.overlay-text{
+  position: absolute;
+  color: white;
+  font-family:"Kanit", sans-serif; 
+  font-size: 40px;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+
+ bottom: 50px;
+ left: 20px;
+ text-align:start;
+
+}
+.container5{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ background-color:  rgb(219, 228, 243);
+ border-bottom: 2px solid;
+}
+.phrase h4{
+  font-family: "Kanit", sans-serif;
+  font-size: 35px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  padding-bottom: 20px;
+  padding-top: -20px;
+}
+.phrase p{
+  font-family: "Kanit", sans-serif;
+  font-size: 15px;
+
+}
+.reserve{
+  background-color: rgb(106, 106, 233);
+  text-decoration: none;
+  color:black;
+  padding:10px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: "Mulish", sans-serif;
+}
+.reserve:hover{
+  background-color: black;
+  color: white;
+}
+.prefooter{
+  width: 100%;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: rgb(219, 228, 243);
+  font-size: 40;
+  
+}
+img#logo{
+  background-color: black;
+  width: 200px;
+  height: 140px;
+}
+.prefooter p{
+  font-family:"Lato", sans-serif; 
+  font-size: 30px;
+  font-weight: 800;
+ letter-spacing: -3px;
+ padding-top: -20;
+}
+
+
+footer{
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  background-color: rgb(219, 228, 243);
+  gap: 40px;
+
+}
+footer h6{
+  
+   font-family: "Kanit", sans-serif;
+   font-size: 15px;
+   font-weight: 700;
+   margin: 0;
+   padding: 0;
+  
+ 
+}
+footer p{
+  font-family: "Kanit", sans-serif;
+   font-size: 10px;
+   font-weight: 600;
+  line-height: 15px;
+  margin: 0;
+  padding: 0;
+}
+footer .social a{
+   font-family: "Kanit", sans-serif;
+   font-size: 10px;
+   font-weight: 600;
+   line-height: 15px;
+   text-decoration: none;
+   color: black;
+}
+footer .social a:hover{
+  color: grey;
+  transition: color 0.3s ease;
+}
+.hours table{
+   font-family: "Kanit", sans-serif;
+   font-size: 10px;
+   font-weight: 600;
+   line-height: 15px;
+   border-collapse: collapse;
+}
+.hours td{
+  padding: 0 5px 2px 0;
+  text-align: left;
+}
+.ch{
+  color: black;
+}
+.ch:hover{
+  color: grey;
+  transition: color 0.3s ease;
+}
+</style>
+<body>
+  <header>
+    <div class="container">
+      <h3 class="logo">PrimalTraining</h3>
+      <nav>
+        <div class="menu"><a href="home.html">HOME</a></div>
+        <div class="menu"><a href="about.html">ABOUT</a></div>
+        <div class="reserve"><a href="reserve.html">RESERVE YOUR SPOT</a></div>
+      </nav>
+    </div>
+  </header>
+ <h1>ABOUT US</h1>
+   <div class="container2">
+    <section class="text1">
+      <h3>TAP INTO YOUR PRIMAL POWER.<br>
+        FORGE A SYRONGER YOU.</h3>
+      <div class="bottom-block">
+        <p id="our">OUR VISION</p>
+        <p>Primal Training is committed to delivering a training experience rooted in raw strength, functional fitness, and<br>
+            unwavering community support. We empower our members to tap into their primal power, achieve their goals,<br>
+             and live a life of strength, resilience, and unwavering determination.</p>
+      </div>
+     </section>
+       <div class="image1"><img src="images/imag1site2.jpg" alt="sports"></div>
+  </div>
+  <div class="container3">
+     <div class="image2"><img src="images/image2about.jpg" alt="sports"></div>
+    <section class="text2">
+      <h3>DYNAMIC OPEN GYM</h3>
+      <div class="bottom-block">
+        <p>At Primal Training, we strip away the fluff and focus on the<br>
+           fundamentals. Our expert coaches guide you through intense,<br>
+            functional workouts designed to build raw strength, resilience,<br>
+             and a body capable of anything.d live a life of strength, resilience, and unwavering determination.</p>
+      </div>
+     </section>
+  </div>
+  <div class="container4">
+    <img src="images/image4about.jpg" alt="sport">
+    <div class="overlay-text">We've created a space<br>
+       where you can reconnect<br>
+        with your primal self.</div>
+  </div>
+  <div class="container5">
+    <div class="phrase"><p>WHAT WE BELIEVE IN</p></div>
+       <div class="phrase"><h4>JOIN THE PRIMAL TRIBE TODAY!</h4></div>
+       <div><a class="reserve" href="reserve.html">RESERVE YOUR SPOT</a></div>
+    </div>
+  <div class="prefooter">
+   <img id="logo" src="images/noback.jpg" alt="logo">
+    <p>PrimalTraining</p>
+  </div>
+  <footer>
+    <div class="contact">
+      <h6>CONTACT</h6>
+      <p>Email:<span class="ch"> hello@figma.com</span> <br>
+        Phone:<span class="ch">(203) 555-5555</span></p>
+    </div>
+    <div class="hours">
+     <h6>OPENING HOURS</h6>
+      <table>
+       <tr><td>MON – FRI</td><td>5:00 – 23:00</td></tr>
+       <tr><td>SATURDAYS</td><td>8:00 – 16:00</td></tr>
+       <tr><td>SUNDAYS</td><td>8:00 – 13:00</td></tr>
+       <tr><td>HOLIDAYS</td><td>8:00 – 16:00</td></tr>
+     </table>
+   </div>
+
+    <div class="social">
+      <h6>SOCIAL</h6>
+      <a href="https://www.instagram.com/figma/">Instagram</a><br>
+      <a href="https://x.com/figma">X</a><br>
+      <a href="https://www.linkedin.com/">linkedIn</a><br>
+      <a href="https://open.spotify.com/">Spotify</a>
+    </div>
+  </footer>
+</body>
+</html>

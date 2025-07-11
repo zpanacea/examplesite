@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Карточка товара</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <header>
+      <h1>Магазин игрушек</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a>
+          <li><a href="catalog.html">Каталог</a>
+          <li><a href="contact.html">Контакты</a>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Плюшевый мишка</h2>
+        <img src="bear.jpg" alt="Мягкий плюшевый мишка">
+        <p>Очень мягкий и приятный на ощупь мишка. Подходит детям от 3 лет.</p>
+        <ul>
+          <li>Материал: хлопок</li>
+          <li>Цвет: коричневый</li>
+          <li>Размер: 40 см</li>
+        </ul>
+        <p>Цена: 1200р</p>
+        <button type="button">Купить</button>
+      </section>
+
+      <form action="send.php" metod="post">
+        <h3>Связаться с нами</h3>
+        <label for="name">Имя:</label>
+        <input id="name" name="name" required><br>
+        <label>Email:</label>
+        <input type="email" name="email" required><br>
+        <textarea name="message" placeholder="Ваше сообщение"></textarea><br>
+        <input type="submit" value="Отправить">
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Магазин игрушек<p>
+    </footer>
+  </body>
+</html>

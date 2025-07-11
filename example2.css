@@ -1,0 +1,13 @@
+input:required{
+    border: 4px solid yellow;
+}
+button:hover{
+    background-color: green;
+    color: white;
+}
+button:active{
+    color: red;
+}
+input:focus{
+    border: 2px solid blue;
+}

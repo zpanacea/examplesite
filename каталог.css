@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 40px;
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#catalog{
+   display: flex;/*как додэен вести себя элемент: как блочный и выкладывается согласно флекс модклм*/
+   gap: 10px; /*растояние между блочными элементами*/
+   justify-content: center;/* распределение пространства вокруг элемента, здесь по центру*/
+   flex-wrap: wrap; /*расположение по главной оси, в данном случае разрешено переноситься на след строку*/
+}
+.item{
+   
+    background-color: aliceblue;
+    border-radius:10px; /*скругленные угла блока*/
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 6px 7px rgba(0, 0, 0, 2);
+    transition: transform 0.3 ease;/*анимация, плавное увелечение*/
+}
+.item:hover{
+    transform: scale(1.05);/*масштабирует элемент по вертикали и горизонтали при наведении*/
+
+}
+.item img{
+    width: 100%;
+    border-radius: 8px;
+}
+.item h3{
+    margin: 10px 0 5px;
+}
+.item p{
+    font-size: 14px;
+    color: blueviolet;
+}
+.item button{
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: aqua;
+    color: wheat;
+    border-radius: 5px;
+    cursor: alias; /*устанвливает форму курсора,когда он находится в пределах элемнта*/
+}
+.item button:hover{
+    background-color: cadetblue;
+}

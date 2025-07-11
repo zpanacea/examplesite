@@ -1,0 +1,14 @@
+a[href$=".pdf"]{
+    color: red;
+}
+a[href^="http"]{
+    color: blue;
+    text-decoration: underline;
+}
+a[href$=".jpg"]{
+    border: 2px solid
+}
+a[href$=".text"]{
+    color: green;
+    font-weight: bold;
+}

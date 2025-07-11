@@ -1,0 +1,15 @@
+.container p{
+    color: green;
+}
+.highlight{
+    color: blue;
+    font-weight: bold;
+}
+#footer{
+    color: gray;
+    text-align: center;
+}
+h1{
+    color: purple;
+    font-size: 32px;
+}
