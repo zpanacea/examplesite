@@ -1,9 +1,0 @@
-a[target]{
-    color: green;
-}
-input[type="password"]{
-    color: red;
-}
-a[:required]{
-    border: 2px solid yellow
-}
